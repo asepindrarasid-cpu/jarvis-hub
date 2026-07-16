@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JARVIS HUB — Blog, Produk & Jasa</title>
+  <meta name="description" content="Platform belajar, templat, dan jasa pembuatan website. Dari artikel gratis sampai produk premium.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><span>JARVIS</span> HUB</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <a href="cart.html" class="nav-cart" style="position:relative;display:inline-flex;align-items:center;padding:8px;border-radius:8px;color:var(--text-secondary);">
+          🛒
+          <span class="cart-badge" style="display:none;position:absolute;top:2px;right:4px;"></span>
+        </a>
+        <a href="shop.html" class="nav-cta" style="padding:8px 20px;background:var(--accent);color:white;font-size:0.875rem;font-weight:600;border-radius:8px;text-decoration:none;box-shadow:0 4px 24px rgba(108,99,255,0.2);">Beli Sekarang</a>
+        <button class="mobile-menu-btn" style="background:none;border:none;color:var(--text-secondary);cursor:pointer;padding:8px;" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" style="display:none;position:fixed;top:64px;left:0;right:0;background:var(--bg-secondary);border-bottom:1px solid var(--border);padding:12px;z-index:999;">
+    <a href="index.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;font-weight:500;border-radius:8px;text-decoration:none;" onclick="this.closest('.mobile-menu').style.display='none'">Home</a>
+    <a href="blog.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;font-weight:500;border-radius:8px;text-decoration:none;" onclick="this.closest('.mobile-menu').style.display='none'">Blog</a>
+    <a href="shop.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;font-weight:500;border-radius:8px;text-decoration:none;" onclick="this.closest('.mobile-menu').style.display='none'">Shop</a>
+    <a href="about.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;font-weight:500;border-radius:8px;text-decoration:none;" onclick="this.closest('.mobile-menu').style.display='none'">About</a>
+    <a href="cart.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;font-weight:500;border-radius:8px;text-decoration:none;" onclick="this.closest('.mobile-menu').style.display='none'">🛒 Keranjang</a>
+  </div>
+  <div id="page-content"></div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><span>JARVIS</span> HUB</div>
+          <p>Platform belajar, templat, dan jasa pembuatan website. Dari artikel gratis sampai produk premium — semua buat bantu kamu sukses online.</p>
+          <div class="social-links" style="display:flex;gap:8px;margin-top:16px;">
+            <a href="#" class="social-link" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-secondary)'">𝕏</a>
+            <a href="#" class="social-link" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-secondary)'">IG</a>
+            <a href="#" class="social-link" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-secondary)'">GH</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-primary);margin-bottom:12px;">Navigasi</h4>
+          <ul style="list-style:none;">
+            <li style="margin-bottom:6px;"><a href="index.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">Home</a></li>
+            <li style="margin-bottom:6px;"><a href="blog.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">Blog</a></li>
+            <li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">Shop</a></li>
+            <li style="margin-bottom:6px;"><a href="about.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-primary);margin-bottom:12px;">Produk</h4>
+          <ul style="list-style:none;">
+            <li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">📖 Ebook</a></li>
+            <li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">📄 Template</a></li>
+            <li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">🎬 Course</a></li>
+            <li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">🛠️ Jasa</a></li>
+            <li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">📦 Bundle</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:20px;border-top:1px solid var(--border);font-size:0.8rem;color:var(--text-muted);">
+        <span>© 2025 JARVIS HUB. All rights reserved.</span>
+        <div>
+          <a href="#" style="color:var(--text-muted);font-size:0.75rem;margin-right:16px;text-decoration:none;">Privacy Policy</a>
+          <a href="#" style="color:var(--text-muted);font-size:0.75rem;text-decoration:none;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

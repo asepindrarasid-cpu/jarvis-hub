@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cara Bikin Landing Page yang Konversi Tinggi dari Nol — JARVIS HUB</title>
+  <meta name="description" content="Panduan lengkap bikin landing page yang nggak cuma cantik, tapi juga bikin orang klik Beli.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><span>JARVIS</span> HUB</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <a href="cart.html" style="position:relative;display:inline-flex;align-items:center;padding:8px;border-radius:8px;color:var(--text-secondary);">
+          🛒<span class="cart-badge" style="display:none;position:absolute;top:2px;right:4px;"></span>
+        </a>
+        <a href="shop.html" style="padding:8px 20px;background:var(--accent);color:white;font-size:0.875rem;font-weight:600;border-radius:8px;text-decoration:none;">Beli Sekarang</a>
+        <button style="background:none;border:none;color:var(--text-secondary);cursor:pointer;padding:8px;" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" style="display:none;position:fixed;top:64px;left:0;right:0;background:var(--bg-secondary);border-bottom:1px solid var(--border);padding:12px;z-index:999;">
+    <a href="index.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;text-decoration:none;border-radius:8px;" onclick="this.closest('.mobile-menu').style.display='none'">Home</a>
+    <a href="blog.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;text-decoration:none;border-radius:8px;" onclick="this.closest('.mobile-menu').style.display='none'">Blog</a>
+    <a href="shop.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;text-decoration:none;border-radius:8px;" onclick="this.closest('.mobile-menu').style.display='none'">Shop</a>
+    <a href="about.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;text-decoration:none;border-radius:8px;" onclick="this.closest('.mobile-menu').style.display='none'">About</a>
+    <a href="cart.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;text-decoration:none;border-radius:8px;" onclick="this.closest('.mobile-menu').style.display='none'">🛒 Keranjang</a>
+  </div>
+  <div id="page-content"></div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><div class="logo"><span>JARVIS</span> HUB</div><p>Platform belajar, templat, dan jasa pembuatan website.</p></div>
+        <div><h4 style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-primary);margin-bottom:12px;">Navigasi</h4><ul style="list-style:none;"><li style="margin-bottom:6px;"><a href="index.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">Home</a></li><li style="margin-bottom:6px;"><a href="blog.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">Blog</a></li><li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">Shop</a></li><li style="margin-bottom:6px;"><a href="about.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">About</a></li></ul></div>
+        <div><h4 style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-primary);margin-bottom:12px;">Produk</h4><ul style="list-style:none;"><li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">📖 Ebook</a></li><li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">📄 Template</a></li><li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">🎬 Course</a></li><li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">🛠️ Jasa</a></li></ul></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding-top:20px;border-top:1px solid var(--border);font-size:0.8rem;color:var(--text-muted);"><span>© 2025 JARVIS HUB</span></div>
+    </div>
+  </footer>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var main = document.getElementById('page-content');
+      var catClass = 'tutorial';
+      var formatDate = function(d) { return '15 July 2025'; };
+      
+      main.innerHTML = `
+        <div class="container">
+          <a href="blog.html" style="display:inline-flex;align-items:center;gap:6px;font-size:0.85rem;color:var(--text-secondary);margin-bottom:24px;">
+            <span>←</span> Kembali ke Blog
+          </a>
+          
+          <div class="article-header">
+            <div class="blog-meta">
+              <span class="blog-category tutorial">Tutorial</span>
+              <span class="text-muted" style="font-size:0.8rem;">15 July 2025</span>
+              <span class="text-muted" style="font-size:0.8rem;">·</span>
+              <span class="text-muted" style="font-size:0.8rem;">8 min baca</span>
+            </div>
+            <h1 style="font-size:clamp(1.5rem,4vw,2.5rem);font-weight:900;line-height:1.2;margin-bottom:16px;">Cara Bikin Landing Page yang Konversi Tinggi dari Nol</h1>
+            <p style="font-size:1.05rem;color:var(--text-secondary);border-left:3px solid var(--accent);padding-left:16px;margin-bottom:20px;">Panduan lengkap bikin landing page yang nggak cuma cantik, tapi juga bikin orang klik Beli.</p>
+            <div class="tags">
+              <span class="tag">#landing page</span><span class="tag">#website</span><span class="tag">#tutorial</span><span class="tag">#desain</span>
+            </div>
+          </div>
+          
+          <div class="article-content">
+            <p>Landing page adalah salah satu aset paling berharga buat siapa aja yang jualan online. Bukan cuma soal tampilan, tapi juga soal bagaimana kamu mengarahkan pengunjung supaya melakukan aksi yang kamu inginkan.</p>
+
+<h2>Apa Itu Landing Page yang Baik?</h2>
+<p>Landing page yang baik punya 5 elemen kunci:</p>
+<ul>
+<li><strong>Headline yang menarik perhatian</strong> — 3 detik pertama menentukan apakah visitor stay atau pergi</li>
+<li><strong>Benefit-oriented copy</strong> — fokus pada apa yang didapat buyer, bukan apa yang seller jual</li>
+<li><strong>Social proof</strong> — testimoni, review, angka, logo klien</li>
+<li><strong>Clear CTA</strong> — tombol yang jelas, kontras, dan sekali saja</li>
+<li><strong>Fast loading</strong> — di atas 3 detik, 40% visitor kabur</li>
+</ul>
+
+<h2>Struktur Landing Page yang Konversi</h2>
+
+<h3>Section 1: Hero</h3>
+<p>Ini bagian paling atas. Harus langsung jelas: siapa kamu, apa yang kamu tawarkan, kenapa orang harus peduli, dan satu CTA utama.</p>
+
+<h3>Section 2: Problem</h3>
+<p>Sentuh pain point target audience. Buat mereka merasa "ini dia!"</p>
+
+<h3>Section 3: Solution</h3>
+<p>Perkenalkan produk/jasa kamu sebagai solusi dari masalah tadi.</p>
+
+<h3>Section 4: Benefits</h3>
+<p>Bukan features — benefits. Orang beli karena ada manfaat, bukan karena ada spesifikasi.</p>
+
+<h3>Section 5: Social Proof</h3>
+<p>Testimoni, review, case study, angka pencapaian.</p>
+
+<h3>Section 6: FAQ</h3>
+<p>Jawab keraguan yang mungkin ada.</p>
+
+<h3>Section 7: Final CTA</h3>
+<p>Last chance. Ulangi offer + CTA.</p>
+
+<hr>
+
+<h2>Copywriting yang Menjual</h2>
+<p>Rumus AIDA:</p>
+<ul>
+<li><strong>Attention</strong>: Headline yang bikin stop scroll</li>
+<li><strong>Interest</strong>: Cerita atau data yang bikin penasaran</li>
+<li><strong>Desire</strong>: Tunjukin benefit + social proof</li>
+<li><strong>Action</strong>: CTA yang jelas</li>
+</ul>
+
+<blockquote>Contoh headline yang bagus: "Bikin Website Profesional dalam 3 Hari — Tanpa Ribet"</blockquote>
+
+<h2>Desain yang Modern</h2>
+<ul>
+<li>Gunakan whitespace (ruang kosong) jangan diisi semua</li>
+<li>Kontras warna yang tepat untuk CTA</li>
+<li>Typography yang readable (font size minimal 16px)</li>
+<li>Mobile-first (60%+ traffic dari HP)</li>
+</ul>
+
+<hr>
+
+<p>Mau template landing page yang sudah jadi? <a href="shop.html">Cek di halaman Shop</a>, gw punya template HTML dan Next.js yang bisa langsung dipakai.</p>
+          </div>
+          
+          <div style="display:flex;gap:12px;padding:20px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin:32px 0;">
+            <span style="font-size:0.85rem;color:var(--text-secondary);font-weight:600;">Bagikan:</span>
+            <button onclick="window.open('https://twitter.com/intent/tweet?text=Cara+Bikin+Landing+Page+yang+Konversi+Tinggi+dari+Nol&url=https://jarvishub.id', '_blank')" style="padding:8px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;color:var(--text-secondary);cursor:pointer;">𝕏</button>
+            <button onclick="navigator.clipboard.writeText(window.location.href);alert('Link disalin!')" style="padding:8px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;color:var(--text-secondary);cursor:pointer;">🔗 Copy</button>
+          </div>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>

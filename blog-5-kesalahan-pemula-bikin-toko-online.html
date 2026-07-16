@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 Kesalahan Pemula Bikin Toko Online (Dan Cara Menghindarinya) — JARVIS HUB</title>
+  <meta name="description" content="Banyak yang gagal di awal karena kesalahan yang sebenarnya bisa dihindari.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><span>JARVIS</span> HUB</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <a href="cart.html" style="position:relative;display:inline-flex;align-items:center;padding:8px;border-radius:8px;color:var(--text-secondary);">
+          🛒<span class="cart-badge" style="display:none;position:absolute;top:2px;right:4px;"></span>
+        </a>
+        <a href="shop.html" style="padding:8px 20px;background:var(--accent);color:white;font-size:0.875rem;font-weight:600;border-radius:8px;text-decoration:none;">Beli Sekarang</a>
+        <button style="background:none;border:none;color:var(--text-secondary);cursor:pointer;padding:8px;" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" style="display:none;position:fixed;top:64px;left:0;right:0;background:var(--bg-secondary);border-bottom:1px solid var(--border);padding:12px;z-index:999;">
+    <a href="index.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;text-decoration:none;border-radius:8px;" onclick="this.closest('.mobile-menu').style.display='none'">Home</a>
+    <a href="blog.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;text-decoration:none;border-radius:8px;" onclick="this.closest('.mobile-menu').style.display='none'">Blog</a>
+    <a href="shop.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;text-decoration:none;border-radius:8px;" onclick="this.closest('.mobile-menu').style.display='none'">Shop</a>
+    <a href="about.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;text-decoration:none;border-radius:8px;" onclick="this.closest('.mobile-menu').style.display='none'">About</a>
+    <a href="cart.html" style="display:block;padding:12px 16px;color:var(--text-secondary);font-size:1rem;text-decoration:none;border-radius:8px;" onclick="this.closest('.mobile-menu').style.display='none'">🛒 Keranjang</a>
+  </div>
+  <div id="page-content"></div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><div class="logo"><span>JARVIS</span> HUB</div><p>Platform belajar, templat, dan jasa pembuatan website.</p></div>
+        <div><h4 style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-primary);margin-bottom:12px;">Navigasi</h4><ul style="list-style:none;"><li style="margin-bottom:6px;"><a href="index.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">Home</a></li><li style="margin-bottom:6px;"><a href="blog.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">Blog</a></li><li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">Shop</a></li><li style="margin-bottom:6px;"><a href="about.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">About</a></li></ul></div>
+        <div><h4 style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-primary);margin-bottom:12px;">Produk</h4><ul style="list-style:none;"><li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">📖 Ebook</a></li><li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">📄 Template</a></li><li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">🎬 Course</a></li><li style="margin-bottom:6px;"><a href="shop.html" style="color:var(--text-secondary);font-size:0.85rem;text-decoration:none;">🛠️ Jasa</a></li></ul></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding-top:20px;border-top:1px solid var(--border);font-size:0.8rem;color:var(--text-muted);"><span>© 2025 JARVIS HUB</span></div>
+    </div>
+  </footer>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var main = document.getElementById('page-content');
+      var catClass = 'tips';
+      var formatDate = function(d) { return '14 July 2025'; };
+      
+      main.innerHTML = `
+        <div class="container">
+          <a href="blog.html" style="display:inline-flex;align-items:center;gap:6px;font-size:0.85rem;color:var(--text-secondary);margin-bottom:24px;">
+            <span>←</span> Kembali ke Blog
+          </a>
+          
+          <div class="article-header">
+            <div class="blog-meta">
+              <span class="blog-category tips">Tips</span>
+              <span class="text-muted" style="font-size:0.8rem;">14 July 2025</span>
+              <span class="text-muted" style="font-size:0.8rem;">·</span>
+              <span class="text-muted" style="font-size:0.8rem;">5 min baca</span>
+            </div>
+            <h1 style="font-size:clamp(1.5rem,4vw,2.5rem);font-weight:900;line-height:1.2;margin-bottom:16px;">5 Kesalahan Pemula Bikin Toko Online (Dan Cara Menghindarinya)</h1>
+            <p style="font-size:1.05rem;color:var(--text-secondary);border-left:3px solid var(--accent);padding-left:16px;margin-bottom:20px;">Banyak yang gagal di awal karena kesalahan yang sebenarnya bisa dihindari.</p>
+            <div class="tags">
+              <span class="tag">#toko online</span><span class="tag">#ecommerce</span><span class="tag">#kesalahan</span><span class="tag">#tips</span>
+            </div>
+          </div>
+          
+          <div class="article-content">
+            <p>Bikin toko online itu gampang. Tapi bikin toko online yang laris itu beda cerita. Berikut 5 kesalahan paling umum:</p>
+
+<h2>1. Terlalu Fokus ke Desain, Nggak ke Konten</h2>
+<p>Banyak yang habisin waktu berminggu-minggu ngerjain logo dan warna, tapi deskripsi produknya cuma "Produk berkualitas".</p>
+<p><strong>Solusi:</strong> Investasi waktu di copywriting produk. Gambar bisa pakai placeholder, tapi deskripsi produk harus meyakinkan.</p>
+
+<h2>2. Nggak Punya Unique Value Proposition</h2>
+<p>"Toko online murah" — semua orang bilang begitu. Itu bukan keunggulan, itu ekspektasi dasar.</p>
+<p><strong>Solusi:</strong> Jawab pertanyaan: kenapa orang harus beli dari kamu, bukan dari kompetitor?</p>
+
+<h2>3. Checkout yang Rumit</h2>
+<p>Form yang terlalu panjang, banyak step, bikin orang kabur.</p>
+<p><strong>Solusi:</strong> Minimalisir step checkout. Nama + email + alamat = cukup.</p>
+
+<h2>4. Nggak Ada Social Proof</h2>
+<p>Toko online tanpa review = kayak warung tanpa pelanggan. Orang ragu beli.</p>
+<p><strong>Solusi:</strong> Mulai dari teman dekat, keluarga, atau kasih diskon besar buat pembeli pertama sebagai ganti review.</p>
+
+<h2>5. Nggak Track Analytics</h2>
+<p>Nggak ngerti dari mana traffic datang, apa yang laku, apa yang tidak = terbang buta.</p>
+<p><strong>Solusi:</strong> Pasang Google Analytics atau alternatif privacy-friendly.</p>
+
+<hr>
+
+<p>Mau solusi instan? <a href="shop.html">Template toko online gw</a> sudah include semua best practices di atas.</p>
+          </div>
+          
+          <div style="display:flex;gap:12px;padding:20px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin:32px 0;">
+            <span style="font-size:0.85rem;color:var(--text-secondary);font-weight:600;">Bagikan:</span>
+            <button onclick="window.open('https://twitter.com/intent/tweet?text=5+Kesalahan+Pemula+Bikin+Toko+Online+%28Dan+Cara+Menghindarinya%29&url=https://jarvishub.id', '_blank')" style="padding:8px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;color:var(--text-secondary);cursor:pointer;">𝕏</button>
+            <button onclick="navigator.clipboard.writeText(window.location.href);alert('Link disalin!')" style="padding:8px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;color:var(--text-secondary);cursor:pointer;">🔗 Copy</button>
+          </div>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>
