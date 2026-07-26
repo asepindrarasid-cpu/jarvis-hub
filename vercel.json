@@ -3,6 +3,7 @@
     { "src": "*.html", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/assets/(.*)", "dest": "/assets/$1" }
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/(.*)", "headers": { "Content-Language": "id" } }
   ]
 }
